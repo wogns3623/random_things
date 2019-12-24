@@ -11,7 +11,7 @@ while True:
         print(
             capture.get(cv2.CAP_PROP_FPS),
             capture.get(cv2.CAP_PROP_BRIGHTNESS),
-            sep="\n"
+            sep="\n",
         )
         check = False
     # frame is image of current frame

@@ -52,9 +52,9 @@ cv2.imshow("resize Baba1", resize1)
 cv2.imshow("resize Baba2", resize2)
 
 # # 걍 리스트 짤라서 갖다붙인거
-sliced1 = image[0:height//2, 0:width]
+sliced1 = image[0 : height // 2, 0:width]
 sliced2 = image.copy()
-sliced2[height//2:, :width//2] = cv2.flip(image[height//2:, width//2:], 1)
+sliced2[height // 2 :, : width // 2] = cv2.flip(image[height // 2 :, width // 2 :], 1)
 cv2.imshow("Baba isn't feel so good", sliced1)
 cv2.imshow("BaaB", sliced2)
 
