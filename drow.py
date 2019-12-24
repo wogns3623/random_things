@@ -3,6 +3,14 @@ import numpy as np
 import random
 import math as m
 
+"""
+painter using openCV
+press c, l, r to choose diagram to draw
+press +, - to increse/decrese diagram's thickness
+press <, > to go prev/next state
+press f, e to choose fill or not
+"""
+
 class State:
     def __init__(self, src):
         self.__prev_src = []
