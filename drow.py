@@ -9,6 +9,7 @@ press c, l, r to choose diagram to draw
 press +, - to increse/decrese diagram's thickness
 press <, > to go prev/next state
 press f, e to choose fill or not
+press q to quit
 """
 
 class State:
@@ -126,7 +127,7 @@ def onMouse(event, x, y, flags, s):
 def main():
     src = np.zeros((512, 512, 3), np.uint8)
     s = State(src)
-    cv2.namedWindow("canvas")
+    cv2.namedWindow("canvas", cv2.WINDOW_NORMAL)
     cv2.setMouseCallback("canvas", onMouse, param=s)
 
     while True:
