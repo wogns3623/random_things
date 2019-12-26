@@ -60,12 +60,12 @@ keke = image[149:222, 13:80]
 # cv2.imshow("keke", keke)
 
 kekebg = np.zeros(src.shape, np.uint8)
-lh = (src.shape[0]-keke.shape[0])//2
-lw = (src.shape[1]-keke.shape[1])//2
-kekebg[lh:lh+keke.shape[0],lw:lw+keke.shape[1]] = keke
+lh = (src.shape[0] - keke.shape[0]) // 2
+lw = (src.shape[1] - keke.shape[1]) // 2
+kekebg[lh : lh + keke.shape[0], lw : lw + keke.shape[1]] = keke
 
 src_c = src.copy()
-src_c[lh:lh+keke.shape[0],lw:lw+keke.shape[1]] = keke
+src_c[lh : lh + keke.shape[0], lw : lw + keke.shape[1]] = keke
 
 # cv2.imshow("add0", src_c)
 # cv2.imshow("add1", cv2.bitwise_or(src, kekebg))
@@ -78,7 +78,7 @@ keke_grey = cv2.cvtColor(keke, cv2.COLOR_BGR2GRAY)
 ret, mask = cv2.threshold(keke_grey, 20, 255, cv2.THRESH_BINARY)
 mask_inv = cv2.bitwise_not(mask)
 
-bg = src[lh:lh+keke.shape[0],lw:lw+keke.shape[1]]
+bg = src[lh : lh + keke.shape[0], lw : lw + keke.shape[1]]
 bg_mask = cv2.bitwise_and(bg, bg, mask=mask_inv)
 keke_black_bg = cv2.bitwise_and(keke, keke, mask=mask)
 keke_with_bg = cv2.add(bg_mask, keke_black_bg)
@@ -92,12 +92,12 @@ keke_with_bg = cv2.add(bg_mask, keke_black_bg)
 # cv2.imshow("7", keke_black_bg)
 # cv2.imshow("8", keke_with_bg)
 keke_bg = src.copy()
-keke_bg[lh:lh+keke.shape[0],lw:lw+keke.shape[1]] = keke_with_bg
+keke_bg[lh : lh + keke.shape[0], lw : lw + keke.shape[1]] = keke_with_bg
 cv2.imshow("keke in img", keke_bg)
 
 
 # blend baba to keke
-baba = image[149:222, 112:112+keke.shape[1]]
+baba = image[149:222, 112 : 112 + keke.shape[1]]
 # cv2.imshow("only baba", baba)
 
 baba_grey = cv2.cvtColor(baba, cv2.COLOR_BGR2GRAY)
@@ -128,14 +128,16 @@ bg_without_baba = cv2.morphologyEx(bg_without_baba, cv2.MORPH_OPEN, kernel)
 bg_remove_baba = image.copy()
 
 baba2keke = cv2.addWeighted(baba_without_bg, 1, keke, 0, 0)
-bg_remove_baba[149:222, 112:112+keke.shape[1]] = baba2keke
+bg_remove_baba[149:222, 112 : 112 + keke.shape[1]] = baba2keke
 cv2.imshow("baba is keke", bg_remove_baba)
 
+
 def handleTrackbar2(x):
-    baba2keke = cv2.addWeighted(baba_without_bg, (100-x)/100, keke, x/100, 0)
+    baba2keke = cv2.addWeighted(baba_without_bg, (100 - x) / 100, keke, x / 100, 0)
     baba2keke = cv2.add(bg_without_baba, baba2keke)
-    bg_remove_baba[149:222, 112:112+keke.shape[1]] = baba2keke
+    bg_remove_baba[149:222, 112 : 112 + keke.shape[1]] = baba2keke
     cv2.imshow("baba is keke", bg_remove_baba)
+
 
 cv2.createTrackbar("blend", "trackbar", 0, 100, handleTrackbar2)
 
