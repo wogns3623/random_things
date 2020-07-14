@@ -5,7 +5,7 @@ import math as m
 
 """
 painter using openCV
-press c, l, r to choose diagram to draw
+press c, l, r, s(curve), p(closed curve) to choose diagram to draw
 press +, - to increse/decrese diagram's thickness
 press <, > to go prev/next state
 press f, e to choose fill or not
@@ -19,6 +19,7 @@ class State:
         self.__next_src = []
         self.__src = src
         self.__tmp_src = src.copy()
+        self.__diagram_vertex = []
         self.is_drawing = False
         self.selected_color = (0, 0, 0)
         self.diagram = "l"
@@ -52,7 +53,7 @@ class State:
             )
 
     def getSrc(self, where=None):
-        if self.is_drawing == False:
+        if self.diagram in "sp" or self.is_drawing == False:
             return self.__src
         else:
             return self.__tmp_src
@@ -88,6 +89,16 @@ class State:
                 t,
                 cv2.LINE_AA,
             )
+        elif self.diagram in "sp":
+            if len(self.__diagram_vertex) != 0:
+                cv2.line(
+                    self.getSrc(),
+                    self.__diagram_vertex[-1],
+                    location,
+                    self.selected_color,
+                    self.thickness
+                )
+            self.__diagram_vertex.append(location)
         # elif self.diagram == ord("t"):
         #     cv2.putText
 
@@ -102,6 +113,15 @@ class State:
         self.__prev_src.append(self.__src)
         self.__next_src = []
         self.__src = self.__tmp_src
+        if self.diagram == "p":
+            cv2.line(
+                    self.getSrc(),
+                    self.__diagram_vertex[-1],
+                    self.__diagram_vertex[0],
+                    self.selected_color,
+                    self.thickness
+                )
+        self.__diagram_vertex = []
         self.mouseBtn = None
         # self.diagram = None
         self.start_location = None
@@ -160,7 +180,7 @@ def main():
         key = cv2.waitKey(1)
         if key != -1:
             key = chr(key)
-            if key in "lcr":
+            if key in "lcrsp":
                 s.diagram = key
                 print("diagram is", key)
             elif key in "fe":
