@@ -1,3 +1,8 @@
-Exercise book
+﻿# Exercise book
 
-배운것들을 올리는 연습장입니다
+* 배운것들을 올리는 연습장입니다
+
+## index
+* python
+    * openCV
+    * pytorch
