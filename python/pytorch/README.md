@@ -1,3 +1,3 @@
 # pytorch
 
--[ ] neural network basic
+
