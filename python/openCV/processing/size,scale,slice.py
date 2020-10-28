@@ -3,7 +3,8 @@ import numpy as np
 import math as m
 
 # read Image
-image = cv2.imread("./image/babaisyou.jpg", cv2.IMREAD_ANYCOLOR)
+imgDir = "../image/"
+image = cv2.imread(imgDir+"babaisyou.jpg", cv2.IMREAD_ANYCOLOR)
 height, width, channel = image.shape
 print(
     f"height is {height}\n\

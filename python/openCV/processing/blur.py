@@ -3,7 +3,8 @@ import numpy as np
 import math
 
 
-src = cv2.imread("./image/sana.jpg")
+imgDir = "../image/"
+src = cv2.imread(imgDir+"sana.jpg")
 cv2.imshow("sana", src)
 val = [0, 0, 0]
 
@@ -27,7 +28,6 @@ cv2.namedWindow("trackbar", cv2.WINDOW_AUTOSIZE)
 cv2.createTrackbar("blurVal", "trackbar", 0, 20, onChange1)
 cv2.createTrackbar("blurVal1", "trackbar", 0, 100, onChange2)
 cv2.createTrackbar("blurVal2", "trackbar", 0, 100, onChange3)
-
 
 cv2.waitKey(0)
 cv2.destroyAllWindows()

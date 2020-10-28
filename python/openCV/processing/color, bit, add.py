@@ -10,8 +10,9 @@ def onMouse(event, x, y, flags, param):
 cv2.namedWindow("trackbar", cv2.WINDOW_AUTOSIZE)
 
 # read Image
-image = cv2.imread("./image/babaisyou.jpg", cv2.IMREAD_ANYCOLOR)
-src = cv2.imread("./image/test.jpg", cv2.IMREAD_ANYCOLOR)
+imgDir = "../image/"
+image = cv2.imread(imgDir+"babaisyou.jpg", cv2.IMREAD_ANYCOLOR)
+src = cv2.imread(imgDir+"test.jpg", cv2.IMREAD_ANYCOLOR)
 
 cv2.imshow("baba", image)
 cv2.setMouseCallback("baba", onMouse)

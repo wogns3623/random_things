@@ -2,8 +2,9 @@ import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 
+imgDir = "../image/"
 def grad():
-    img = cv2.imread("image/sana.jpg", cv2.IMREAD_GRAYSCALE)
+    img = cv2.imread(imgDir+"sana.jpg", cv2.IMREAD_GRAYSCALE)
 
     laplacian = cv2.Laplacian(img, cv2.CV_64F)
     sobelx = cv2.Sobel(img, cv2.CV_64F, 1, 0, ksize=3)
@@ -24,7 +25,7 @@ def grad():
     plt.show()
 
 def canny():
-    img = cv2.imread("image/sana.jpg", cv2.IMREAD_GRAYSCALE)
+    img = cv2.imread(imgDir+"sana.jpg", cv2.IMREAD_GRAYSCALE)
 
     cv2.imshow("canny", img)
 
