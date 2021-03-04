@@ -1,8 +1,10 @@
-﻿# Exercise book
+﻿# Today I Learned
 
-* 배운것들을 올리는 연습장입니다
+* 공부한 내용을 정리하는 repo 입니다
 
 ## index
 * python
-    * openCV
-    * pytorch
+  * openCV
+  * pytorch
+
+* javascript
