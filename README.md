@@ -4,21 +4,35 @@
 
 ## index
 
-- python
+### Language
 
-  - openCV
-  - pytorch
+#### :point_up_2: 주 사용 언어
+- :first_quarter_moon: HTML, CSS, Javascript(ES6)
+- :first_quarter_moon: Python
 
-- javascript
+#### :v: 부 사용 언어
+- :waxing_crescent_moon: C
+- :waxing_crescent_moon: Typescript
+- :waxing_crescent_moon: Scss
+- :waxing_crescent_moon: markdown
+- :new_moon: Kotlin
 
-  - react
-  - jest
+### Platform
+- :first_quarter_moon: Node JS
 
-- dart
+### Framework
+- :first_quarter_moon: React
+- :waxing_crescent_moon: Flutter
 
-  - flutter
+### Library
+- :waxing_crescent_moon: OpenCV(python)
+- :waxing_crescent_moon: Pytorch
 
-- etc
+### database
+- :waxing_crescent_moon: mysql
 
-  - unit testing
-  - markdown
+### dev process
+- Unit testing
+  - :new_moon: jest
+
+

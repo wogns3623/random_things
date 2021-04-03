@@ -54,3 +54,8 @@ Warning: File C:\Users\Administrator\.android\repositories.cfg could not be load
 ### Hot reload
 
 - 앱을 중단하지 않은 채로 코드를 변경하면 재시작하거나 현재 상태를 잃어버리지 않고 변경 사항이 반영됨(Stateful Hot Reload)
+
+## dependency
+
+- pubspec.yaml에서 관리
+- 이 파일이 수정되면 vscode에서 알아서 `flutter pub get`을 실행해 변경된 패키지를 가져옴
