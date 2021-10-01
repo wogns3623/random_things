@@ -6,16 +6,13 @@
 
 ### Language
 
-#### :point_up_2: 주 사용 언어
+#### :point_up_2: 언어
 - :first_quarter_moon: HTML, CSS, Javascript(ES6)
 - :first_quarter_moon: Python
-
-#### :v: 부 사용 언어
-- :waxing_crescent_moon: C
+- 
+- :waxing_crescent_moon: C/C++
 - :waxing_crescent_moon: Typescript
 - :waxing_crescent_moon: Scss
-- :waxing_crescent_moon: markdown
-- :new_moon: Kotlin
 
 ### Platform
 - :first_quarter_moon: Node JS
@@ -30,9 +27,5 @@
 
 ### database
 - :waxing_crescent_moon: mysql
-
-### dev process
-- Unit testing
-  - :new_moon: jest
 
 
