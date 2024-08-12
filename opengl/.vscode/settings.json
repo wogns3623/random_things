@@ -1,5 +1,13 @@
 {
-  "cSpell.words": ["framebuffer", "GLADloadproc", "glfw", "OPENGL"],
+  "cSpell.words": [
+    "framebuffer",
+    "GLADloadproc",
+    "glfw",
+    "GLsizei",
+    "OPENGL",
+    "Programiv",
+    "Shaderiv"
+  ],
   "files.associations": {
     "iostream": "cpp"
   }

@@ -27,6 +27,15 @@ target_link_libraries(01_open_window
 	${ALL_LIBS}
 )
 
+# Tutorial 2
+add_executable(02_triangle_with_shaders 
+	src/tutorials/02_triangle_with_shaders/main.cpp
+	${VENDORS_SOURCES}
+)
+target_link_libraries(02_triangle_with_shaders
+	${ALL_LIBS}
+)
+
 
 # Visual Studio
 SOURCE_GROUP(common REGULAR_EXPRESSION "src/common/.*" )
