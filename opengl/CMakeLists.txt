@@ -3,7 +3,7 @@ project(learn_opengl VERSION 0.1.0 LANGUAGES C CXX)
 
 
 # Compile external dependencies 
-add_subdirectory (dependencies)
+add_subdirectory(dependencies)
 
 
 include_directories(
@@ -18,24 +18,7 @@ set(ALL_LIBS
 	glfw
 )
 
-# Tutorial 1
-add_executable(01_open_window 
-	src/tutorials/01_open_window/main.cpp
-	${VENDORS_SOURCES}
-)
-target_link_libraries(01_open_window
-	${ALL_LIBS}
-)
-
-# Tutorial 2
-add_executable(02_triangle_with_shaders 
-	src/tutorials/02_triangle_with_shaders/main.cpp
-	${VENDORS_SOURCES}
-)
-target_link_libraries(02_triangle_with_shaders
-	${ALL_LIBS}
-)
-
+add_subdirectory(src)
 
 # Visual Studio
 SOURCE_GROUP(common REGULAR_EXPRESSION "src/common/.*" )
