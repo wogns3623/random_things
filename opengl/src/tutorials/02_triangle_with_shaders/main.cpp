@@ -101,19 +101,34 @@ int main() {
   // triangle
   // clang-format off
   float vertices[] = {
-      -0.5f, -0.5f, 0.0f,
-      0.5f, -0.5f, 0.0f,
-      0.0f,  0.5f, 0.0f
+    // first triangle
+     0.5f,  0.5f, 0.0f,  // top right
+     0.5f, -0.5f, 0.0f,  // bottom right
+    // -0.5f,  0.5f, 0.0f,  // top left 
+
+    // second triangle
+    //  0.5f, -0.5f, 0.0f,  // bottom right
+    -0.5f, -0.5f, 0.0f,  // bottom left
+    -0.5f,  0.5f, 0.0f   // top left
   };
   // clang-format on
 
-  // create vertex buffer object and get its id
-  GLuint VBO;
-  // create n VBO objects, currently n = 1
+  // can eliminate duplicate vertices by specifying the index of the vertices
+  // clang-format off
+  unsigned int indices[] = {
+    0, 1, 3,
+    1, 2, 3
+  };
+  // clang-format on
+
+  // create vertex buffer object, vertex array object, element buffer object and
+  // get its id
+  GLuint VBO, EBO, VAO;
+  // create n buffers, currently n = 1
   glGenBuffers(1, &VBO);
+  glGenBuffers(1, &EBO);
 
   // create vertex array object
-  GLuint VAO;
   glGenVertexArrays(1, &VAO);
 
   glBindVertexArray(VAO);
@@ -125,6 +140,11 @@ int main() {
   // copy vertices into GL_ARRAY_BUFFER(VBO)
   // GL_STATIC_DRAW is some kind of optimization option?
   glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+
+  // bind EBO into GL_ELEMENT_ARRAY_BUFFER
+  glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
+  glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices,
+               GL_STATIC_DRAW);
 
   // let them know how to analysis given data
   // location in vertex shader
@@ -151,9 +171,8 @@ int main() {
     // use complied shader program
     glUseProgram(shader_program);
     glBindVertexArray(VAO);
-
-    GLint array_starts_at = 0;
-    glDrawArrays(GL_TRIANGLES, array_starts_at, 3);
+    glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+    glBindVertexArray(0);
     // ==== end render section ====
 
     glfwSwapBuffers(window);
