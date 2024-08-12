@@ -49,8 +49,6 @@ build CMakeFiles/01_open_window.dir/src/tutorials/01_open_window/main.cpp.obj: C
   INCLUDES = -IC:/Users/wogns/Workspace/TLI/opengl/include -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glad/include -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/include
   OBJECT_DIR = CMakeFiles\01_open_window.dir
   OBJECT_FILE_DIR = CMakeFiles\01_open_window.dir\src\tutorials\01_open_window
-  TARGET_COMPILE_PDB = CMakeFiles\01_open_window.dir\
-  TARGET_PDB = 01_open_window.pdb
 
 
 # =============================================================================
@@ -65,10 +63,9 @@ build 01_open_window.exe: CXX_EXECUTABLE_LINKER__01_open_window_ CMakeFiles/01_o
   OBJECT_DIR = CMakeFiles\01_open_window.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\01_open_window.dir\
   TARGET_FILE = 01_open_window.exe
   TARGET_IMPLIB = lib01_open_window.dll.a
-  TARGET_PDB = 01_open_window.pdb
+  TARGET_PDB = 01_open_window.exe.dbg
 
 
 #############################################
@@ -309,8 +306,6 @@ build dependencies/glfw/src/CMakeFiles/glfw.dir/context.c.obj: C_COMPILER__glfw_
   INCLUDES = -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/include -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src
   OBJECT_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = dependencies\glfw\src\libglfw3.pdb
 
 build dependencies/glfw/src/CMakeFiles/glfw.dir/init.c.obj: C_COMPILER__glfw_unscanned_ C$:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src/init.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -319,8 +314,6 @@ build dependencies/glfw/src/CMakeFiles/glfw.dir/init.c.obj: C_COMPILER__glfw_uns
   INCLUDES = -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/include -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src
   OBJECT_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = dependencies\glfw\src\libglfw3.pdb
 
 build dependencies/glfw/src/CMakeFiles/glfw.dir/input.c.obj: C_COMPILER__glfw_unscanned_ C$:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src/input.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -329,8 +322,6 @@ build dependencies/glfw/src/CMakeFiles/glfw.dir/input.c.obj: C_COMPILER__glfw_un
   INCLUDES = -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/include -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src
   OBJECT_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = dependencies\glfw\src\libglfw3.pdb
 
 build dependencies/glfw/src/CMakeFiles/glfw.dir/monitor.c.obj: C_COMPILER__glfw_unscanned_ C$:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src/monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -339,8 +330,6 @@ build dependencies/glfw/src/CMakeFiles/glfw.dir/monitor.c.obj: C_COMPILER__glfw_
   INCLUDES = -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/include -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src
   OBJECT_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = dependencies\glfw\src\libglfw3.pdb
 
 build dependencies/glfw/src/CMakeFiles/glfw.dir/platform.c.obj: C_COMPILER__glfw_unscanned_ C$:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src/platform.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -349,8 +338,6 @@ build dependencies/glfw/src/CMakeFiles/glfw.dir/platform.c.obj: C_COMPILER__glfw
   INCLUDES = -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/include -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src
   OBJECT_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = dependencies\glfw\src\libglfw3.pdb
 
 build dependencies/glfw/src/CMakeFiles/glfw.dir/vulkan.c.obj: C_COMPILER__glfw_unscanned_ C$:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src/vulkan.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -359,8 +346,6 @@ build dependencies/glfw/src/CMakeFiles/glfw.dir/vulkan.c.obj: C_COMPILER__glfw_u
   INCLUDES = -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/include -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src
   OBJECT_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = dependencies\glfw\src\libglfw3.pdb
 
 build dependencies/glfw/src/CMakeFiles/glfw.dir/window.c.obj: C_COMPILER__glfw_unscanned_ C$:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src/window.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -369,8 +354,6 @@ build dependencies/glfw/src/CMakeFiles/glfw.dir/window.c.obj: C_COMPILER__glfw_u
   INCLUDES = -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/include -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src
   OBJECT_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = dependencies\glfw\src\libglfw3.pdb
 
 build dependencies/glfw/src/CMakeFiles/glfw.dir/egl_context.c.obj: C_COMPILER__glfw_unscanned_ C$:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src/egl_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -379,8 +362,6 @@ build dependencies/glfw/src/CMakeFiles/glfw.dir/egl_context.c.obj: C_COMPILER__g
   INCLUDES = -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/include -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src
   OBJECT_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = dependencies\glfw\src\libglfw3.pdb
 
 build dependencies/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.obj: C_COMPILER__glfw_unscanned_ C$:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src/osmesa_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -389,8 +370,6 @@ build dependencies/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.obj: C_COMPILER
   INCLUDES = -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/include -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src
   OBJECT_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = dependencies\glfw\src\libglfw3.pdb
 
 build dependencies/glfw/src/CMakeFiles/glfw.dir/null_init.c.obj: C_COMPILER__glfw_unscanned_ C$:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src/null_init.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -399,8 +378,6 @@ build dependencies/glfw/src/CMakeFiles/glfw.dir/null_init.c.obj: C_COMPILER__glf
   INCLUDES = -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/include -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src
   OBJECT_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = dependencies\glfw\src\libglfw3.pdb
 
 build dependencies/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.obj: C_COMPILER__glfw_unscanned_ C$:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src/null_monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -409,8 +386,6 @@ build dependencies/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.obj: C_COMPILER__
   INCLUDES = -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/include -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src
   OBJECT_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = dependencies\glfw\src\libglfw3.pdb
 
 build dependencies/glfw/src/CMakeFiles/glfw.dir/null_window.c.obj: C_COMPILER__glfw_unscanned_ C$:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src/null_window.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -419,8 +394,6 @@ build dependencies/glfw/src/CMakeFiles/glfw.dir/null_window.c.obj: C_COMPILER__g
   INCLUDES = -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/include -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src
   OBJECT_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = dependencies\glfw\src\libglfw3.pdb
 
 build dependencies/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.obj: C_COMPILER__glfw_unscanned_ C$:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src/null_joystick.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -429,8 +402,6 @@ build dependencies/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.obj: C_COMPILER_
   INCLUDES = -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/include -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src
   OBJECT_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = dependencies\glfw\src\libglfw3.pdb
 
 build dependencies/glfw/src/CMakeFiles/glfw.dir/win32_module.c.obj: C_COMPILER__glfw_unscanned_ C$:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src/win32_module.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -439,8 +410,6 @@ build dependencies/glfw/src/CMakeFiles/glfw.dir/win32_module.c.obj: C_COMPILER__
   INCLUDES = -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/include -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src
   OBJECT_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = dependencies\glfw\src\libglfw3.pdb
 
 build dependencies/glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj: C_COMPILER__glfw_unscanned_ C$:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src/win32_time.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -449,8 +418,6 @@ build dependencies/glfw/src/CMakeFiles/glfw.dir/win32_time.c.obj: C_COMPILER__gl
   INCLUDES = -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/include -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src
   OBJECT_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = dependencies\glfw\src\libglfw3.pdb
 
 build dependencies/glfw/src/CMakeFiles/glfw.dir/win32_thread.c.obj: C_COMPILER__glfw_unscanned_ C$:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src/win32_thread.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -459,8 +426,6 @@ build dependencies/glfw/src/CMakeFiles/glfw.dir/win32_thread.c.obj: C_COMPILER__
   INCLUDES = -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/include -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src
   OBJECT_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = dependencies\glfw\src\libglfw3.pdb
 
 build dependencies/glfw/src/CMakeFiles/glfw.dir/win32_init.c.obj: C_COMPILER__glfw_unscanned_ C$:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src/win32_init.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -469,8 +434,6 @@ build dependencies/glfw/src/CMakeFiles/glfw.dir/win32_init.c.obj: C_COMPILER__gl
   INCLUDES = -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/include -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src
   OBJECT_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = dependencies\glfw\src\libglfw3.pdb
 
 build dependencies/glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.obj: C_COMPILER__glfw_unscanned_ C$:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src/win32_joystick.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -479,8 +442,6 @@ build dependencies/glfw/src/CMakeFiles/glfw.dir/win32_joystick.c.obj: C_COMPILER
   INCLUDES = -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/include -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src
   OBJECT_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = dependencies\glfw\src\libglfw3.pdb
 
 build dependencies/glfw/src/CMakeFiles/glfw.dir/win32_monitor.c.obj: C_COMPILER__glfw_unscanned_ C$:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src/win32_monitor.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -489,8 +450,6 @@ build dependencies/glfw/src/CMakeFiles/glfw.dir/win32_monitor.c.obj: C_COMPILER_
   INCLUDES = -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/include -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src
   OBJECT_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = dependencies\glfw\src\libglfw3.pdb
 
 build dependencies/glfw/src/CMakeFiles/glfw.dir/win32_window.c.obj: C_COMPILER__glfw_unscanned_ C$:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src/win32_window.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -499,8 +458,6 @@ build dependencies/glfw/src/CMakeFiles/glfw.dir/win32_window.c.obj: C_COMPILER__
   INCLUDES = -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/include -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src
   OBJECT_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = dependencies\glfw\src\libglfw3.pdb
 
 build dependencies/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj: C_COMPILER__glfw_unscanned_ C$:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src/wgl_context.c || cmake_object_order_depends_target_glfw
   DEFINES = -DUNICODE -DWINVER=0x0501 -D_GLFW_WIN32 -D_UNICODE
@@ -509,8 +466,6 @@ build dependencies/glfw/src/CMakeFiles/glfw.dir/wgl_context.c.obj: C_COMPILER__g
   INCLUDES = -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/include -IC:/Users/wogns/Workspace/TLI/opengl/dependencies/glfw/src
   OBJECT_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
   OBJECT_FILE_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
-  TARGET_COMPILE_PDB = dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
-  TARGET_PDB = dependencies\glfw\src\libglfw3.pdb
 
 
 # =============================================================================
@@ -524,9 +479,8 @@ build dependencies/glfw/src/libglfw3.a: C_STATIC_LIBRARY_LINKER__glfw_ dependenc
   OBJECT_DIR = dependencies\glfw\src\CMakeFiles\glfw.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = dependencies\glfw\src\CMakeFiles\glfw.dir\glfw.pdb
   TARGET_FILE = dependencies\glfw\src\libglfw3.a
-  TARGET_PDB = dependencies\glfw\src\libglfw3.pdb
+  TARGET_PDB = glfw3.a.dbg
 
 
 #############################################
@@ -658,14 +612,14 @@ build dependencies/glfw/src/all: phony dependencies/glfw/src/libglfw3.a
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeCCompiler.cmake.in C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeCCompilerABI.c C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeCInformation.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeCXXCompiler.cmake.in C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeCXXCompilerABI.cpp C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeCompilerIdDetection.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeDependentOption.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompileFeatures.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeDetermineRCCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeDetermineSystem.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeNinjaFindMake.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakePackageConfigHelpers.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeRCCompiler.cmake.in C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeSystem.cmake.in C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeTestCCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeTestCXXCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeTestCompilerCommon.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeTestRCCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CheckCSourceCompiles.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CheckIncludeFile.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CheckLibraryExists.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/FindThreads.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/GNUInstallDirs.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Internal/FeatureTesting.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Determine-CXX.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake CMakeLists.txt dependencies/CMakeLists.txt dependencies/glfw/CMakeLists.txt dependencies/glfw/CMake/cmake_uninstall.cmake.in dependencies/glfw/CMake/glfw3.pc.in dependencies/glfw/CMake/glfw3Config.cmake.in dependencies/glfw/src/CMakeLists.txt
+build build.ninja: RERUN_CMAKE | C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeCInformation.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeDependentOption.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakePackageConfigHelpers.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CheckCSourceCompiles.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CheckIncludeFile.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CheckLibraryExists.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/FindThreads.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/GNUInstallDirs.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake CMakeLists.txt dependencies/CMakeLists.txt dependencies/glfw/CMakeLists.txt dependencies/glfw/CMake/cmake_uninstall.cmake.in dependencies/glfw/CMake/glfw3.pc.in dependencies/glfw/CMake/glfw3Config.cmake.in dependencies/glfw/src/CMakeLists.txt
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeCCompiler.cmake.in C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeCCompilerABI.c C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeCInformation.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeCXXCompiler.cmake.in C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeCXXCompilerABI.cpp C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeCompilerIdDetection.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeDependentOption.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCXXCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompileFeatures.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerABI.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeDetermineCompilerId.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeDetermineRCCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeDetermineSystem.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeFindBinUtils.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeNinjaFindMake.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakePackageConfigHelpers.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeParseLibraryArchitecture.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeRCCompiler.cmake.in C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeSystem.cmake.in C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeTestCCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeTestCXXCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeTestCompilerCommon.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeTestRCCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CheckCSourceCompiles.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CheckIncludeFile.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CheckLibraryExists.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/CrayClang-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/OrangeC-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/FindThreads.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/GNUInstallDirs.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Internal/FeatureTesting.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Determine-CXX.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake CMakeLists.txt dependencies/CMakeLists.txt dependencies/glfw/CMakeLists.txt dependencies/glfw/CMake/cmake_uninstall.cmake.in dependencies/glfw/CMake/glfw3.pc.in dependencies/glfw/CMake/glfw3Config.cmake.in dependencies/glfw/src/CMakeLists.txt: phony
+build C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/BasicConfigVersion-SameMajorVersion.cmake.in C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeCInformation.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeCXXInformation.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeCommonLanguageInclude.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeDependentOption.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeGenericSystem.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeInitializeConfigs.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeLanguageInformation.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakePackageConfigHelpers.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeRCInformation.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInformation.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CMakeSystemSpecificInitialize.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CheckCSourceCompiles.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CheckIncludeFile.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/CheckLibraryExists.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-C.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/GNU-CXX.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Compiler/GNU.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/FindPackageMessage.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/FindThreads.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/GNUInstallDirs.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Internal/CheckSourceCompiles.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-C.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU-CXX.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/Windows-GNU.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/Windows-Initialize.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/Windows-windres.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/Windows.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/Platform/WindowsPaths.cmake C$:/Managed$ Programs/msys64/ucrt64/share/cmake/Modules/WriteBasicConfigVersionFile.cmake CMakeCache.txt CMakeFiles/3.28.1/CMakeCCompiler.cmake CMakeFiles/3.28.1/CMakeCXXCompiler.cmake CMakeFiles/3.28.1/CMakeRCCompiler.cmake CMakeFiles/3.28.1/CMakeSystem.cmake CMakeLists.txt dependencies/CMakeLists.txt dependencies/glfw/CMakeLists.txt dependencies/glfw/CMake/cmake_uninstall.cmake.in dependencies/glfw/CMake/glfw3.pc.in dependencies/glfw/CMake/glfw3Config.cmake.in dependencies/glfw/src/CMakeLists.txt: phony
 
 
 #############################################

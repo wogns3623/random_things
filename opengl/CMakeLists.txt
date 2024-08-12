@@ -12,6 +12,7 @@ include_directories(
   dependencies/glfw/include/
 )
 
+file(GLOB VENDORS_SOURCES dependencies/glad/src/glad.c)
 set(ALL_LIBS
 	${OPENGL_LIBRARY}
 	glfw
@@ -20,6 +21,7 @@ set(ALL_LIBS
 # Tutorial 1
 add_executable(01_open_window 
 	src/tutorials/01_open_window/main.cpp
+	${VENDORS_SOURCES}
 )
 target_link_libraries(01_open_window
 	${ALL_LIBS}
