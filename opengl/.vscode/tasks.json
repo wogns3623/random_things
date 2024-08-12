@@ -1,0 +1,55 @@
+{
+  // See https://go.microsoft.com/fwlink/?LinkId=733558
+  // for the documentation about the tasks.json format
+  "version": "2.0.0",
+  "runner": "terminal",
+  "type": "shell",
+  "echoCommand": true,
+  "presentation": {
+    "reveal": "always"
+  },
+  "tasks": [
+    {
+      "type": "shell",
+      "label": "compile",
+      "command": "g++",
+      "args": [
+        "${fileDirname}\\${fileBasenameNoExtension}.exe",
+        "-g",
+        "-o",
+        "${file}"
+      ],
+
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+
+      // See https://code.visualstudio.com/docs/editor/tasks#_defining-a-problem-matcher
+      "problemMatcher": {
+        "fileLocation": ["relative", "${workspaceFolder}"],
+        "pattern": {
+          // The regular expression. Example to match: helloWorld.c:5:3: warning: implicit declaration of function ‘printf’ [-Wimplicit-function-declaration]
+          "regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+          // The first match group matches the file name which is relative.
+          "file": 1,
+          // The second match group matches the line on which the problem occurred.
+          "line": 2,
+          // The third match group matches the column at which the problem occurred.
+          "column": 3,
+          // The fourth match group matches the problem's severity. Can be ignored. Then all problems are captured as errors.
+          "severity": 4,
+          // The fifth match group matches the message.
+          "message": 5
+        }
+      }
+    },
+
+    {
+      "label": "execute",
+      "command": "cmd",
+      "args": ["/C", "${file}"],
+      "group": "test"
+    }
+  ]
+}
