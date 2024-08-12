@@ -4,6 +4,8 @@
 
 #include <iostream>
 
+void processInput(GLFWwindow *window);
+
 int main() {
   glfwInit();
 
@@ -46,10 +48,23 @@ int main() {
    */
   glViewport(0, 0, 800, 600);
 
-  // update loop
+  // frame loop
   while (!glfwWindowShouldClose(window)) {
+    processInput(window);
+
+    // rendering code
+
+    // select color to initialize
+    // r,g,b,a
+    glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+
+    // select witch buffer to initialize with
+    glClear(GL_COLOR_BUFFER_BIT);
+
+    // NOTE: 두 함수 호출 순서가 바뀌면 안되나?
     // swap front buffer(current displayed frame) to back buffer (next frame)
     glfwSwapBuffers(window);
+
     // poll key event, mouse event, etc...
     glfwPollEvents();
   }
@@ -57,4 +72,13 @@ int main() {
   // cleanup function
   glfwTerminate();
   return 0;
+}
+
+void processInput(GLFWwindow *window) {
+  // GLFW_PRESS, GLFW_REPEAT, GLFW_RELEASE
+  if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS) {
+    glfwSetWindowShouldClose(window, true);
+  }
+
+  // some key handling code
 }
