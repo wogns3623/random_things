@@ -152,15 +152,15 @@ int main() {
   // let them know how to analysis given data
   // location in vertex shader
   GLuint location = 0;
-  GLint vector_len = 3;
+  GLint vector_size = 3, vertex_size = 3;
   GLenum data_type = GL_FLOAT;
   GLboolean should_normalize = GL_FALSE;
   // if 0, opengl decide it
-  GLsizei item_size = vector_len * sizeof(float);
+  GLsizei stride = vertex_size * sizeof(float);
   // where data starts
-  void *data_offset = (void *)0;
-  glVertexAttribPointer(location, vector_len, data_type, should_normalize,
-                        item_size, data_offset);
+  void *offset = (void *)0;
+  glVertexAttribPointer(location, vector_size, data_type, should_normalize,
+                        stride, offset);
   glEnableVertexAttribArray(location);
 
   // main loop

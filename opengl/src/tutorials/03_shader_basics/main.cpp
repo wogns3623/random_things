@@ -13,13 +13,17 @@ void GLAPIENTRY MessageCallback(GLenum source, GLenum type, GLuint id,
 
 const char *vertex_shader_source = "\
 #version 330 core\n\
-layout (location = 0) in vec3 aPos;\n\
 \n\
-// out vec4 vertex_color;\n\
+// layout (location = 0) mean the a_pos variable has attribute position 0\n\
+layout (location = 0) in vec3 a_pos;\n\
+layout (location = 1) in vec3 a_color;\n\
+\n\
+// output to fragment shader\n\
+out vec3 vertex_color;\n\
 \n\
 void main() {\n\
-  gl_Position = vec4(aPos.xyz, 1.0);\n\
-  // vertex_color = vec4(0.5, 0.0, 0.0, 1.0);\n\
+  gl_Position = vec4(a_pos, 1.0);\n\
+  vertex_color = a_color;\n\
 }\0\
 ";
 const GLsizei vertex_shader_string_count = 1;
@@ -27,16 +31,13 @@ const GLsizei vertex_shader_string_count = 1;
 const char *fragment_shader_source = "\
 #version 330 core\n\
 \n\
-// // input from vertex shader\n\
-// in vec4 vertex_color;\n\
-\n\
-// input from application\n\
-uniform vec4 our_color;\n\
+// input from vertex shader\n\
+in vec3 vertex_color;\n\
 \n\
 out vec4 frag_color;\n\
 \n\
 void main() {\n\
-  frag_color = our_color;\n\
+  frag_color = vec4(vertex_color, 1.0);\n\
 }\0\
 ";
 const GLsizei fragment_shader_string_count = 1;
@@ -121,9 +122,10 @@ int main() {
 
   // clang-format off
   float vertices[] = {
-      -0.5f, -0.5f, 0.0f,
-      0.5f, -0.5f, 0.0f,
-      0.0f,  0.5f, 0.0f
+    // positions         // colors
+     0.5f, -0.5f, 0.0f,  1.0f, 0.0f, 0.0f,   // bottom right
+    -0.5f, -0.5f, 0.0f,  0.0f, 1.0f, 0.0f,   // bottom left
+     0.0f,  0.5f, 0.0f,  0.0f, 0.0f, 1.0f    // top 
   };
 
   unsigned int indices[] = {
@@ -145,11 +147,19 @@ int main() {
   glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices,
                GL_STATIC_DRAW);
 
-  GLuint location = 0;
-  GLint vector_len = 3;
-  glVertexAttribPointer(location, vector_len, GL_FLOAT, GL_FALSE,
-                        vector_len * sizeof(float), (void *)0);
-  glEnableVertexAttribArray(location);
+  GLuint pos_location = 0, color_location = 1;
+  GLint vector_size = 3, vertex_size = 6;
+  GLsizei stride = vertex_size * sizeof(float);
+  const void *pos_offset = (void *)0,
+             *color_offset = (void *)(vector_size * sizeof(float));
+
+  glVertexAttribPointer(pos_location, vector_size, GL_FLOAT, GL_FALSE, stride,
+                        pos_offset);
+  glEnableVertexAttribArray(pos_location);
+
+  glVertexAttribPointer(color_location, vector_size, GL_FLOAT, GL_FALSE, stride,
+                        color_offset);
+  glEnableVertexAttribArray(color_location);
 
   // main loop
   while (!glfwWindowShouldClose(window)) {
@@ -159,23 +169,8 @@ int main() {
     glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
     glClear(GL_COLOR_BUFFER_BIT);
 
-    float time = glfwGetTime() * 8;
-    float red = (sin(time) / 2.0f) + 0.5f;
-    float green = (sin(time * 2) / 2.0f) + 0.5f;
-    float blue = (sin(time * 4) / 2.0f) + 0.5f;
-
-    // can find location before use the program
-    int our_color_location = glGetUniformLocation(shader_program, "our_color");
-
     // use complied shader program
     glUseProgram(shader_program);
-
-    // pass vec4 value to our_color
-    // But updating the uniform should be done after using the shader program
-    // glUniform4f(our_color_location, 0.0f, green, 0.0f, 1.0f);
-
-    float our_color[4] = {red, green, blue, 1.0f};
-    glUniform4fv(our_color_location, 1, our_color);
 
     glBindVertexArray(VAO);
     glDrawElements(GL_TRIANGLES, 3, GL_UNSIGNED_INT, 0);

@@ -65,3 +65,4 @@ For example, `some_vec.xxyx` create new vector {x, x, y, x}
 - `new_vec = some_vec.xyz + some_other_vec.xxx;` is also possible
 - Created vector has same type with original
 - Can use swizzling as arguments `new_vec = vec4(some_vec.rgb, 1.0);`
+- `new_vec = vec4(some_vec, 1.0);` is also possible
