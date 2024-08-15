@@ -8,16 +8,15 @@
   },
   "tasks": [
     {
+      "label": "build executable using cmake",
       "type": "shell",
-      "label": "compile",
-      "command": "g++",
-      "args": [
-        "${fileDirname}\\${fileBasenameNoExtension}.exe",
-        "-g",
-        "-o",
-        "${file}"
-      ],
-      "group": "build",
+      "command": "cmake",
+      "args": ["--build", ".", "--target", "${fileDirnameBasename}"],
+      "options": { "cwd": "${workspaceFolder}/build" },
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
       "problemMatcher": {
         "fileLocation": ["relative", "${workspaceFolder}"],
         "pattern": {
@@ -29,12 +28,6 @@
           "message": 5
         }
       }
-    },
-    {
-      "label": "execute",
-      "command": "cmd",
-      "args": ["/C", "${file}"],
-      "group": "test"
     }
   ]
 }

@@ -13,8 +13,8 @@
       "stopAtEntry": false,
       "cwd": "${fileDirname}",
       "environment": [],
-      "console": "internalConsole"
-      // "preLaunchTask":
+      "console": "internalConsole",
+      "preLaunchTask": "${defaultBuildTask}"
       // TODO: Add preLaunchTask to compile current target
     }
   ]
