@@ -21,6 +21,20 @@ Can get maximum number by using `glGetIntegerv(GL_MAX_VERTEX_ATTRIBS, &nrAttribu
 
 Fragment shader must define output variable with vec4 cause it need to generate final output color rgba
 
+## Uniforms
+
+Another way to pass data from application(on cpu) to shader(on gpu)
+
+Unlike input variables, uniform variables are unique per shader program object
+
+- Thus, uniform variables can be accessed any shaders at any stages in shader program
+
+And keep their value until they are reset or update
+
+You only need to define a uniform variable in the shader that will use it
+
+- If you declare a uniform that isn't used anywhere in shader, GLSL compiler will silently remove that variable from output witch may cause various issues
+
 ## Variable type
 
 Contain basic C types(int, float, double, uint...)
