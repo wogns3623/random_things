@@ -3,6 +3,7 @@ get_filename_component(CURRENT_DIR_NAME ${CMAKE_CURRENT_SOURCE_DIR} NAME)
 add_executable(${CURRENT_DIR_NAME} 
 	main.cpp
 	${VENDORS_SOURCES}
+	${COMMON_DIR}/shader.cpp
 )
 
 target_link_libraries(${CURRENT_DIR_NAME}

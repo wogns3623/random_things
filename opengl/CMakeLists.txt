@@ -18,8 +18,12 @@ set(ALL_LIBS
 	glfw
 )
 
+set(COMMON_DIR
+  ${CMAKE_SOURCE_DIR}/src/common
+)
+
 add_subdirectory(src)
 
 # Visual Studio
 SOURCE_GROUP(common REGULAR_EXPRESSION "src/common/.*" )
-SOURCE_GROUP(shaders REGULAR_EXPRESSION ".*/.*shader$" )
+SOURCE_GROUP(shaders REGULAR_EXPRESSION ".*/.*(shader|frag|vert|geom)$" )
