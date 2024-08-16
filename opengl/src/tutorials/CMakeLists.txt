@@ -1,8 +1,35 @@
-file(GLOB sources_list LIST_DIRECTORIES true "*")
-foreach(dir ${sources_list})
-    IF(IS_DIRECTORY ${dir})
-        add_subdirectory(${dir})
-    ELSE()
-        CONTINUE()
-    ENDIF()
-endforeach()
+
+function(create_project_from_sources TUTORIAL_DIR)
+  file(GLOB SOURCE
+    "${TUTORIAL_DIR}/*.h"
+    "${TUTORIAL_DIR}/*.cpp"
+  )
+  file(GLOB SHADERS
+    "${TUTORIAL_DIR}/*.vs"
+    "${TUTORIAL_DIR}/*.fs"
+    "${TUTORIAL_DIR}/*.tcs"
+    "${TUTORIAL_DIR}/*.tes"
+    "${TUTORIAL_DIR}/*.gs"
+    "${TUTORIAL_DIR}/*.cs"
+  )
+  get_filename_component(TUTORIAL_NAME ${TUTORIAL_DIR} NAME)
+
+  add_executable(${TUTORIAL_NAME} ${SOURCE} ${SHADERS} ${COMMON})
+  target_link_libraries(${TUTORIAL_NAME} ${LIBS})
+
+  set_target_properties(${TUTORIAL_NAME} PROPERTIES RUNTIME_OUTPUT_DIRECTORY ${CMAKE_BINARY_DIR})
+
+  foreach(SHADER ${SHADERS})
+    add_custom_command(TARGET ${TUTORIAL_NAME} PRE_BUILD COMMAND ${CMAKE_COMMAND} -E copy ${SHADER} $<TARGET_FILE_DIR:${TUTORIAL_NAME}>)
+    add_custom_command(TARGET ${TUTORIAL_NAME} PRE_BUILD COMMAND ${CMAKE_COMMAND} -E copy_if_different ${DLLS} $<TARGET_FILE_DIR:${NAME}>)
+  endforeach(SHADER)
+endfunction()
+
+
+file(GLOB TUTORIAL_DIRS LIST_DIRECTORIES true "*")
+
+foreach(TUTORIAL_DIR ${TUTORIAL_DIRS})
+  IF(IS_DIRECTORY ${TUTORIAL_DIR})
+    create_project_from_sources(${TUTORIAL_DIR})
+  ENDIF()
+endforeach(TUTORIAL_DIR)
