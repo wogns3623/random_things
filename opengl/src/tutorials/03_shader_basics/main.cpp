@@ -45,7 +45,7 @@ int main() {
   // ==== end initializing ====
 
   // compile shader program
-  Shader shader_program("./shader.vert", "./shader.frag");
+  Shader shader_program("./shader.vs", "./shader.fs");
 
   // clang-format off
   float vertices[] = {
